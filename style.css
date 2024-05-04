@@ -1,77 +1,91 @@
-body,
-html {
+body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .photo-container {
-    position: relative;
     overflow: hidden;
     width: 100%;
     height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-image: url('https://i.ibb.co/QmNyBHC/photo-2024-05-04-15-11-19.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.logo-container {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
 .searchcontain {
-    caret-color: transparent;
-    text-align: center;
+    caret-color: rgba(0, 0, 0, 0);
     position: fixed;
-    top: 12%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 490px;
+    width: 80%;
+    max-width: 600px;
     height: 35px;
     background-color: rgba(255, 255, 255, 0.603);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 18px;
     text-align: left;
-    font-size: 16px;
+    font-size: 22px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 20px;
+    line-height: 27px;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     padding: 0 10px;
 }
 
+.logo-container {
+    width: 300px;
+    height: 150px;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('https://i.ibb.co/djsxgsb/WASD-Films.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .film-container {
+    justify-content: center;
     text-align: center;
-    overflow-y: auto;
-    position: absolute;
+    overflow: hidden;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 80%;
     max-width: 600px;
-    height: 70%;
-    max-height: 650px;
+    height: 65%;
+    background-color: rgba(255, 255, 255, 0.822);
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
 }
 
 .film {
+    display: inline-block;
     margin: 10px;
-    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 25px;
     border: 2px solid #ccc;
     border-radius: 18px;
     cursor: pointer;
     display: inline-block;
-    width: calc(50% - 20px);
+    width: 45%;
     box-sizing: border-box;
-    vertical-align: top;
 }
 
 .banner {
-    height: 150px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     margin-bottom: 10px;
@@ -80,5 +94,5 @@ html {
 }
 
 .info {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Используем такой же шрифт, как и в строке поиска */
 }
