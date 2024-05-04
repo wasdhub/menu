@@ -5,9 +5,11 @@ body, html {
     padding: 0;
     height: 100%;
 }
+
 ::-webkit-scrollbar {
     display: none; 
 }
+
 .photo-container {
     overflow: hidden;
     width: 100%;
@@ -29,12 +31,11 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:600px;
-    height:650px;
+    width: 70%; /* Пример использования процентов */
+    height: 70vh; /* Пример использования viewport height */
     background-color:rgba(255, 255, 255, 0.822);
     border-radius: 18px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-    top: calc(50% + 250px);
     overflow-y: auto; 
 }
 
@@ -44,7 +45,7 @@ body, html {
     top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 490px;
+    width: 90%; /* Пример использования процентов */
     height: 35px;
     background-color: rgba(255, 255, 255, 0.603);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
@@ -89,13 +90,4 @@ body, html {
 
 .logo-container {
     width: 600px;
-    height: 350px;
-    position: fixed;
-    top: 17%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url('https://i.ibb.co/djsxgsb/WASD-Films.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
